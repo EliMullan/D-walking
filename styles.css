@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+body {
+    font-size: 16px;
+    
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    gap: 0.2rem;
+    justify-content: end;
+    justify-items: end;
+}
+
+main section {
+    display: grid; 
+    grid-template-columns: 1.8fr 0.4fr 0.7fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."; 
+      height: 30rem;
+}
+
+.full {
+    background-image: url('media/BoyneBattleHouse.jpg');
+    background-size: cover;
+}
+
+.center {
+    background-image: url('media/foothpath-cut.jpg');
+    background-size: cover;
+}
+
+.right {
+    background-image: url('media/beach.jpg');
+    background-size: cover;
+}
