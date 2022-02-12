@@ -6,7 +6,7 @@ body {
     font-size: 16px; 
     font-family: 'Courier New', Courier, monospace; 
     text-align: center;
-    background-color: #979934;
+ 
  }
 
  button {
@@ -51,18 +51,21 @@ main  > .left {
     background-size: cover;
     grid-area: 1 / 1 / span 1/ span 3;
     height:30rem;
-    border: 1px solid black;
+    border: 2px solid rgba(98,129,51, 0.5) ; 
 }
 
 main  > .center {
-    grid-area: 1 / 4 / span 1/ span 1;
+    grid-area: 1 / 4 / span 1/ span 2;
     height:30rem;
-    background-color: #979934;
-    border: 1px solid black;
+    z-index: 3;
+    border: 2px solid rgba(98,129,51, 0.5) ; 
+    background-color: rgba(98,129,51, 0.5);
+    text-align: left;
+    color: white;
 }
 
 .center > .text {
-    margin-top: 60%;
+    margin-top: 30%;
 }
 
 main  > .right {
@@ -70,7 +73,7 @@ main  > .right {
     background-size: cover;
     grid-area: 1 / 5 / span 1 / span 2;
     height:30rem;
-    border: 1px solid black;
+    border: 2px solid rgba(98,129,51, 0.5) ; 
 }
 
 
@@ -87,12 +90,13 @@ main  > .right {
         background-size: cover;
         grid-area: 1 / 1 / span 1/ span 6;
         height:30rem;
+        opacity: 0.7;
     }
     
     main  > .center {
-        grid-area: 1 / 1 / span 1/ span 3;
+        grid-area: 1 / 1 / span 1/ span 4;
         height:30rem;
-        background-color: rgba(255, 255, 255, 0.6);
+        
     }
     
     .center > .text {
@@ -103,17 +107,22 @@ main  > .right {
         display: none;
     }
     
-    main > .forestImg {
-        display: none; 
+     main > .joinUs-text {
+        grid-area: 2 / 1 / span 1 / span 6; 
+           
+    }
+    main > .cannonImg {  
+       opacity: 0.5;         
     }
     
-    main > .joinUs-text {
-        grid-area: 2 / 1 / span 1 / span 6; 
-        margin-left: -5rem;      
+    main > .forestImg {
+        opacity: 0.5;         
     }
 
     main > .joinUs-text > .text {
         text-align: center; 
+        font-weight: bold;
+
     }
     
     main > .location {
@@ -139,42 +148,54 @@ main  > .right {
 }
 /* end of phone media query*/
 
-main > .forestImg {
-    grid-area: 2 / 1 / span 1 / span 1; 
+main > .cannonImg {
+    grid-area: 2 / 4 / span 1 / span 1; 
     padding: 0.5rem;   
     height: 20rem;
     width: 15rem;
-    z-index: 2;
-    background-color: #979934; 
+    z-index: 4; 
+    transform: rotate(-10deg); 
+    border: 2px solid rgba(98,129,51, 0.5) ; 
+}
+
+main > .forestImg {
+    grid-area: 2 / 5 / span 1 / span 1; 
+    padding: 0.5rem;   
+    height: 20rem;
+    width: 15rem;
+    z-index: 5;
+    transform: rotate(10deg);
+    border: 2px solid rgba(98,129,51, 0.5) ; 
 }
 
 main > .joinUs-text {
-    grid-area: 2 / 2 / span 1 / span 5; 
-    background-color: #979934;  
-    text-align: left; 
+    grid-area: 2 / 2 / span 1 / span 4; 
+    text-align: left;
+    min-width: 3rem;
+    max-height: 20rem;
+    z-index: 5;
 }
 
 main > .location {
     grid-area: 3 / 1 / span 1 / span 6;   
     display: flex;
     justify-content: space-around;
-    background-color: #64b319;
     padding: 0.5rem;
     border: 1px solid black;
     
 }
 
 .location > div {
-    width: 20rem;
+    width: 25rem;
     padding: 1rem;
-    background-color: whitesmoke;    
     -webkit-box-shadow: 2px 6px 6px -1px rgba(0,0,0,0.69); 
     box-shadow: 2px 6px 6px -1px rgba(0,0,0,0.69);
-    background-color: #979934;
+    
 }
 
 .location > div > img {
-    height: 15rem;
+    height: 20rem;
+    border-radius: 40%;
 }
 
 .button {
