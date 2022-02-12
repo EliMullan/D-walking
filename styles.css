@@ -121,14 +121,12 @@ main  > .right {
 
     main > .joinUs-text > .text {
         text-align: center; 
-        font-weight: bold;
-
     }
     
     main > .location {
         grid-area: 3 / 1 / span 1 / span 6;   
         display: flex;
-        flex-direction: column;    
+        flex-direction: column;
 
     }
     
@@ -151,8 +149,9 @@ main  > .right {
 main > .cannonImg {
     grid-area: 2 / 4 / span 1 / span 1; 
     padding: 0.5rem;   
-    height: 20rem;
-    width: 15rem;
+    height: 17rem;
+    width: 12rem;
+    opacity: 0.7;
     z-index: 4; 
     transform: rotate(-10deg); 
     border: 2px solid rgba(98,129,51, 0.5) ; 
@@ -161,8 +160,9 @@ main > .cannonImg {
 main > .forestImg {
     grid-area: 2 / 5 / span 1 / span 1; 
     padding: 0.5rem;   
-    height: 20rem;
-    width: 15rem;
+    height: 17rem;
+    width: 12rem;
+    opacity: 0.7;
     z-index: 5;
     transform: rotate(10deg);
     border: 2px solid rgba(98,129,51, 0.5) ; 
@@ -174,6 +174,7 @@ main > .joinUs-text {
     min-width: 3rem;
     max-height: 20rem;
     z-index: 5;
+    font-weight: bold;
 }
 
 main > .location {
@@ -186,7 +187,7 @@ main > .location {
 }
 
 .location > div {
-    width: 25rem;
+    max-width: 25rem;
     padding: 1rem;
     -webkit-box-shadow: 2px 6px 6px -1px rgba(0,0,0,0.69); 
     box-shadow: 2px 6px 6px -1px rgba(0,0,0,0.69);
